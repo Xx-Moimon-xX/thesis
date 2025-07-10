@@ -1,0 +1,12 @@
+requests
+python-dotenv
+dotenv
+pandas
+pytest
+boto3
+langchain_community
+ipywidgets
+IPython
+ipydatagrid
+itables
+importlib
