@@ -1,3 +1,6 @@
 [submodule "external/MCPBench"]
 	path = external/MCPBench
 	url = https://github.com/Xx-Moimon-xX/MCPBench.git
+[submodule "servers/bing-search-mcp"]
+	path = servers/bing-search-mcp
+	url = https://github.com/leehanchung/bing-search-mcp.git
