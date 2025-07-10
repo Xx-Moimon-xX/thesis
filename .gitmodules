@@ -1,0 +1,3 @@
+[submodule "external/MCPBench"]
+	path = external/MCPBench
+	url = https://github.com/Xx-Moimon-xX/MCPBench.git
