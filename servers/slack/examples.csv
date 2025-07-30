@@ -1,0 +1,43 @@
+real user inputs
+can you look at the #squad-txb channel and count the number of absences per person?
+check my slack
+Were mortgages statements supposed to be in the MOVE July 4th UAT release? CAn you look over confluence and slack
+summarise me the latest weekly update slack mesage from di chanllenor on #general slack channel
+Can you please help me find the answers to the AML/CTF mandatory training on confluencr or slack
+how do i login to the 10x dev console to check subscrition
+"**Task**  \nCreate a knowledge base of frequently asked questions (FAQs) for the fincrime team, which will be used to enhance the responses of a language learning model (LLM).\n**Additional Details**  \n-  Extract common questions from the #fraud-fincrime-ops Slack channel.\n-  Provide detailed summaries for each question.\n-  Include sources for both questions and answers.\n**Output Format**  \n-  List of FAQs formatted as follows:\n  - **Question:** [insert the question]  \n    - _[Person who asked the question] [Slack URL]_ (include as many sources as possible)  \n  - **Answer:** [detailed answer to the question]  \n    - _[Source to Slack URL with answer]_ (include as many sources as possible)\n**Steps**  \n1. Access the #fraud-fincrime-ops Slack channel.\n2. Identify and compile common questions.\n3. Write detailed summaries for each question.\n4. Ensure all entries include source references.\n**Notes**  \n-  Approach the task step by step, identifying necessary documents to answer queries.\n-  Focus on reasoning before drawing conclusions.\n-  Maintain clarity and conciseness in language.\n**Examples**  \n-  **Question:** What are the steps to report a suspicious transaction?  \n  - _[John Doe] [Slack URL]_  \n  - **Answer:** To report a suspicious transaction, follow these steps: [detailed process]  \n    - _[Source to Slack URL with answer]_"
+Where is the slack message about the new AI procurement service with a company in london.  the message was about Ned
+what is the password of https://cxnpl.readme.io/password?redirect=/docs/transaction-events#/
+what are the documents we need from the vendor to conduct a vendor due diligence? I want to onboard openai  \n  \ne.g. tpsa soc 2 etc  \n  \nSearch confluence and slack for these processes
+find me the slas for incidents
+"[Create a Q&A Document from Fincrime Channel Queries]\n\nIdentify and document frequently asked questions from the Slack channel #fraud-fincrime-ops, providing clear and accurate answers. Utilize replies in threads for comprehensive understanding.\n\n# Steps\n\n1. Access the Slack channel #fraud-fincrime-ops.\n\n2. Identify frequently asked questions.\n\n3. Write detailed answers, referencing thread replies if needed.\n\n# Output Format\n\n-  Provide a list of questions with corresponding answers.\n\n-  Use Markdown for headings and bullet points.\n\n# Examples (optional)\n\n-  **Question:** What is the process for reporting a suspicious transaction?\n\n  - **Answer:** [PLACEHOLDER for answer based on channel content]\n  - **Slack URL:** [Slack URL]\n\n-  **Question:** How do I escalate a case in the system?\n\n  - **Answer:** [PLACEHOLDER for answer based on channel content]\n  - **Slack URL:** [Slack URL]\n\n# Notes (optional)\n\nEnsure clarity and accuracy in the answers, maintaining the confidentiality of any sensitive information."
+find me fridays all hands meeting
+"find the message sent by gagan where he mentions, s3 replication approch for feedzai to shared infra replication. First FZ S3 _ Shared infra replication. then Shared infra _ tyro, gsb replication etc. should be sent this month"
+Access the channel #UMR-review and confirm you can see all messages - we are going to do some analysis.
+can you access the #fraud-fincrime-ops slack channel?
+what production incidents have I (Ricky Schlessinger) assisted on in the past 3 months - search slack and other tools
+can you find the slack message with a list of abns to test in the SIT environment?
+"can you find the web app url for the new move environment on 10x persephone, which is multi tenancy?"
+"`For the joint account invite flow, invitee will be only able to accept the invitation once he/she is kyc'd right?` give answer to this query there should be discussion b/w gagan and paige"
+
+how much does visa charge for currency conversion
+"I want to do a deep dive across the last 3 months for every PR raised and record theese in a CSV table, I want to know how long each of the jobs took and which ones failed passed. I am trying to understand which on thes playwright tests are causing the most issues and taking the longest to run.\nI dont want you to execute this, could you tell me how I could make a script and how would i run this from my only machine? How do I ge tthe auth token?"
+Display the most active contributors on the project bosphorus-middleware in the month June of 2025
+Where is cxnpl-gitlab-build-agent built from?
+"## Vendor Due Diligence for AI Models\nConduct a vendor due diligence process for a new vendor, OpenAI, at Constantinople, focusing on setting up AI models for business use.\n### Details\n-  Understand the vendor's capabilities and offerings.\n-  Assess the vendor's alignment with business needs.\n-  Gather necessary documentation and information.\n## Steps\n1. **Research Requirements**: Identify what information is needed from OpenAI to complete the due diligence.\n2. **Consult Resources**: Search Confluence and Slack for existing guidelines or procedures at CXNPL.\n3. **Gather Documentation**: Collect relevant documents from OpenAI, such as compliance reports, security policies, and service agreements.\n4. **Evaluate Vendor**: Analyze the gathered information to assess OpenAI's suitability as a vendor.\n## Output Format\n-  Provide a summary report detailing the findings and recommendations.\n-  Include a checklist of documents and information obtained.\n## Examples\n-  Example of necessary documentation: [PLACEHOLDER]\n-  Example of a due diligence report: [PLACEHOLDER]\n## Notes\n-  Ensure all findings are backed by reasoning before conclusions.\n-  Maintain clarity and conciseness throughout the process."
+can you please help me troubleshoot why I can’t connect to 2 monitor screens?
+what are the documents we need from the vendor to conduct a vendor due diligence? I want to onboard openai  \n  \ne.g. tpsa soc 2 etc  \n  \nSearch confluence and slack for these processes
+How often is pay day?
+"I’m wondering:  \n  \nCould one of you please help with this? We're trying to understand how to pass a configurable value to Storyblok. We've already defined the card scheme in the `config.json` file, what i want to understand how can we reference or use that value within this file? (edited)"
+what happens to TDs when a customer suffers an insolvency event
+does Australian fair work legislation and awards apply to employees based outside of Australia where the employer is an Australian company
+How is serviceability on the personal overdraft calculated
+how do I except a snyk exception.  \n  \nSearch in confluence please
+How can I get access to bank manager in the e2e environmnet
+What is Bosphorus in Constantinople
+"Please help me write a response to this message. I need to convey that if you want to build a feature where you raise a case manually in the ops console, you must create the initiation logic/screens manually. There is no generic way to do this as each case is custom. The old connect case template way of doing this is deprecated because it is prone to error and takes a lot of manual effort to copy IDs across and the like.  \n  \nPlease refer to the confluence document: Case management in the ops console  \n  \nHey team,  \n In the Ops Console, if an Ops person needs to raise a case using the case management flow by selecting a template — we’d need to create a new template for that, right?  \nAlso, based on the document below, it looks like the case is created from Bosphorus (backend) and is just being displayed in the Ops Console. Can someone please confirm?  \n  \nhttps://constantinople.atlassian.net/wiki/spaces/CXNPLPREPROJ/pages/702546211/Case+Management+in+the+Ops+Console#Case.1"
+Do you have the capability to assess each employees performance from all the data made available to you?
+Can you summarise this confluence page very briefly please  \n  \nhttps://constantinople.atlassian.net/wiki/spaces/CXNPLSecur/pages/393118971/Code+of+Conduct
+write jira ticket to uplift the postcode classification config to include the MOVE variables.
+What does temporal do for us?
+make me understand 10x banking platfrom?

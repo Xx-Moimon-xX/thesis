@@ -1,0 +1,152 @@
+You are an AI assistant tasked with creating a synthetic dataset for a thesis project. Your goal is to generate realistic synthetic inputs that simulate how real employees and users might interact with an AI system using external tools. 
+
+Some examples of real user inputs are in the given csv file, take inspiration from this when you are creating your inputs.
+
+Here are the tools available:
+
+<tool_descriptions>
+Tool(name='slack_list_channels', title=None, description='List public or pre-defined channels in the workspace with pagination', inputSchema={'type': 'object', 'properties': {'limit': {'type': 'number', 'description': 'Maximum number of channels to return (default 100, max 200)', 'default': 100}, 'cursor': {'type': 'string', 'description': 'Pagination cursor for next page of results'}}}, outputSchema=None, annotations=None, meta=None), Tool(name='slack_get_channel_history', title=None, description='Get recent messages from a channel', inputSchema={'type': 'object', 'properties': {'channel_id': {'type': 'string', 'description': 'The ID of the channel'}, 'limit': {'type': 'number', 'description': 'Number of messages to retrieve (default 10)', 'default': 10}}, 'required': ['channel_id']}, outputSchema=None, annotations=None, meta=None), Tool(name='slack_get_thread_replies', title=None, description='Get all replies in a message thread', inputSchema={'type': 'object', 'properties': {'channel_id': {'type': 'string', 'description': 'The ID of the channel containing the thread'}, 'thread_ts': {'type': 'string', 'description': "The timestamp of the parent message in the format '1234567890.123456'. Timestamps in the format without the period can be converted by adding the period such that 6 numbers come after it."}}, 'required': ['channel_id', 'thread_ts']}, outputSchema=None, annotations=None, meta=None), Tool(name='slack_get_users', title=None, description='Get a list of all users in the workspace with their basic profile information', inputSchema={'type': 'object', 'properties': {'cursor': {'type': 'string', 'description': 'Pagination cursor for next page of results'}, 'limit': {'type': 'number', 'description': 'Maximum number of users to return (default 100, max 200)', 'default': 100}}}, outputSchema=None, annotations=None, meta=None), Tool(name='slack_get_user_profile', title=None, description='Get detailed profile information for a specific user', inputSchema={'type': 'object', 'properties': {'user_id': {'type': 'string', 'description': 'The ID of the user'}}, 'required': ['user_id']}, outputSchema=None, annotations=None, meta=None)]
+</tool_descriptions>
+
+Your task is to create 5 synthetic inputs along with the tool calls that would be required to obtain the answer for each input. Each synthetic input should be a realistic query or request that a user might make, utilizing one or more of the available Slack tools.
+
+Output each synthetic input in JSONL format with the following attributes:
+- unique_id: A unique identifier for each input (starting from 1)
+- Prompt: The synthetic user input or query
+- Answer: Leave this empty
+- Tool Calls: An array of tool names that would be called to answer the prompt
+
+Format example:
+{"unique_id": 1, "Prompt": "Get slack channels in the workspace", "Answer": "", "Tool Calls": ["slack_list_channels"]}
+
+Guidelines for creating diverse and realistic inputs:
+1. Vary the complexity of queries, from simple requests to more complex multi-step processes.
+2. Include scenarios that require multiple tool calls to complete a task.
+3. Use realistic language and phrasing that a typical user might employ.
+4. Cover a range of use cases for each tool, exploring different parameters and combinations.
+5. Include some edge cases or less common scenarios to add variety.
+
+Now, generate 5 unique synthetic inputs following the guidelines and format provided above. Ensure that each input is realistic, diverse, and utilizes the available Slack tools appropriately. Present your output as a series of JSONL formatted entries, one per line.
+
+--------------------
+
+
+You are an AI assistant tasked with creating a synthetic dataset for a thesis project. Your goal is to generate realistic synthetic inputs that simulate how real employees and users might interact with an AI system using Slack-related tools.
+
+First, carefully review the following tool descriptions:
+
+<tool_descriptions>
+Tool(name='slack_list_channels', title=None, description='List public or pre-defined channels in the workspace with pagination', inputSchema={'type': 'object', 'properties': {'limit': {'type': 'number', 'description': 'Maximum number of channels to return (default 100, max 200)', 'default': 100}, 'cursor': {'type': 'string', 'description': 'Pagination cursor for next page of results'}}}, outputSchema=None, annotations=None, meta=None), Tool(name='slack_get_channel_history', title=None, description='Get recent messages from a channel', inputSchema={'type': 'object', 'properties': {'channel_id': {'type': 'string', 'description': 'The ID of the channel'}, 'limit': {'type': 'number', 'description': 'Number of messages to retrieve (default 10)', 'default': 10}}, 'required': ['channel_id']}, outputSchema=None, annotations=None, meta=None), Tool(name='slack_get_thread_replies', title=None, description='Get all replies in a message thread', inputSchema={'type': 'object', 'properties': {'channel_id': {'type': 'string', 'description': 'The ID of the channel containing the thread'}, 'thread_ts': {'type': 'string', 'description': "The timestamp of the parent message in the format '1234567890.123456'. Timestamps in the format without the period can be converted by adding the period such that 6 numbers come after it."}}, 'required': ['channel_id', 'thread_ts']}, outputSchema=None, annotations=None, meta=None), Tool(name='slack_get_users', title=None, description='Get a list of all users in the workspace with their basic profile information', inputSchema={'type': 'object', 'properties': {'cursor': {'type': 'string', 'description': 'Pagination cursor for next page of results'}, 'limit': {'type': 'number', 'description': 'Maximum number of users to return (default 100, max 200)', 'default': 100}}}, outputSchema=None, annotations=None, meta=None), Tool(name='slack_get_user_profile', title=None, description='Get detailed profile information for a specific user', inputSchema={'type': 'object', 'properties': {'user_id': {'type': 'string', 'description': 'The ID of the user'}}, 'required': ['user_id']}, outputSchema=None, annotations=None, meta=None)]
+</tool_descriptions>
+
+You have also been provided with a CSV file containing real user inputs. Use these as inspiration to replicate authentic usage patterns in your synthetic inputs.
+
+Your task is to create the following number of unique synthetic inputs:
+
+<number_inputs>
+50
+</number_inputs>
+
+Each synthetic input should be a realistic query or request that a user might make, utilizing one or more of the available Slack tools. Follow these guidelines to create diverse and realistic inputs:
+
+1. Vary the complexity of queries, from simple requests to more complex multi-step processes.
+2. Include scenarios that require multiple tool calls to complete a task.
+3. Use realistic language and phrasing that a typical user might employ.
+4. Cover a range of use cases for each tool, exploring different parameters and combinations.
+5. Include some edge cases or less common scenarios to add variety.
+6. Mimic the style and content of the real user inputs provided in the CSV file.
+
+Output Format:
+Present your output as a series of JSONL formatted entries, one per line. Each entry should have the following attributes:
+- unique_id: A unique identifier for each input (starting from 1)
+- Prompt: The synthetic user input or query
+- Answer: Leave this empty
+- Tool Calls: An array of tool names that would be called to answer the prompt
+
+Example format:
+{"unique_id": 1, "Prompt": "Example user query", "Answer": "", "Tool Calls": ["example_tool_1", "example_tool_2"]}
+
+Before generating each input, wrap your planning process inside <input_generation_process> tags. Consider the following:
+
+1. User Role: Who might be making this request? (e.g., manager, team member, new employee)
+   - List 2-3 potential user roles and their characteristics.
+2. Context: What situation or need prompts this query?
+   - Describe a specific scenario that leads to this query.
+3. Query Type: Is this a simple request, a multi-step process, or an edge case?
+   - Classify the query and explain why it fits that category.
+4. Tool Selection: Which tool(s) are most appropriate for this query?
+   - List relevant tools and briefly justify their selection.
+5. Natural Language: How would a real user phrase this request?
+   - Write 2-3 variations of how a user might phrase this query.
+6. Specific Details: What parameters or information should be included?
+   - List key details that should be incorporated into the query.
+7. Variety Check: How does this input differ from previous ones?
+   - Note unique aspects of this query compared to others.
+8. Potential Follow-ups: What might the user ask next?
+   - List 2-3 potential follow-up queries.
+9. Real Input Inspiration: How can you incorporate elements from the provided CSV file of real user inputs?
+   - Note specific patterns or phrases from real inputs that you'll use.
+10. JSONL Format Check: Ensure the entry is correctly formatted on a single line.
+    - Write out the JSONL structure with placeholders for the actual content.
+
+After your planning process, generate 3-5 potential JSONL formatted entries for that input. Then, select the best one that meets all criteria and add it to your final output.
+
+It's okay for this planning section to be quite long, as thorough consideration will lead to more realistic and varied inputs.
+
+Repeat this process until you have generated the requested number of inputs. Ensure that each input is unique and adds value to the dataset.
+
+
+-------------------
+You are an AI assistant tasked with creating a synthetic dataset for a fintech startup that builds software and provides banking services to small to medium-sized banks. Your goal is to generate realistic synthetic inputs that simulate how employees and users might interact with an AI system using tools in this context.
+
+First, review the following tool descriptions:
+
+<tool_descriptions>
+Tool(name='slack_list_channels', title=None, description='List public or pre-defined channels in the workspace with pagination', inputSchema={'type': 'object', 'properties': {'limit': {'type': 'number', 'description': 'Maximum number of channels to return (default 100, max 200)', 'default': 100}, 'cursor': {'type': 'string', 'description': 'Pagination cursor for next page of results'}}}, outputSchema=None, annotations=None, meta=None), Tool(name='slack_get_channel_history', title=None, description='Get recent messages from a channel', inputSchema={'type': 'object', 'properties': {'channel_id': {'type': 'string', 'description': 'The ID of the channel'}, 'limit': {'type': 'number', 'description': 'Number of messages to retrieve (default 10)', 'default': 10}}, 'required': ['channel_id']}, outputSchema=None, annotations=None, meta=None), Tool(name='slack_get_thread_replies', title=None, description='Get all replies in a message thread', inputSchema={'type': 'object', 'properties': {'channel_id': {'type': 'string', 'description': 'The ID of the channel containing the thread'}, 'thread_ts': {'type': 'string', 'description': "The timestamp of the parent message in the format '1234567890.123456'. Timestamps in the format without the period can be converted by adding the period such that 6 numbers come after it."}}, 'required': ['channel_id', 'thread_ts']}, outputSchema=None, annotations=None, meta=None), Tool(name='slack_get_users', title=None, description='Get a list of all users in the workspace with their basic profile information', inputSchema={'type': 'object', 'properties': {'cursor': {'type': 'string', 'description': 'Pagination cursor for next page of results'}, 'limit': {'type': 'number', 'description': 'Maximum number of users to return (default 100, max 200)', 'default': 100}}}, outputSchema=None, annotations=None, meta=None), Tool(name='slack_get_user_profile', title=None, description='Get detailed profile information for a specific user', inputSchema={'type': 'object', 'properties': {'user_id': {'type': 'string', 'description': 'The ID of the user'}}, 'required': ['user_id']}, outputSchema=None, annotations=None, meta=None)]
+</tool_descriptions>
+
+Your task is to create the following number of unique synthetic inputs:
+
+<number_inputs>
+50
+</number_inputs>
+
+You have been provided with a CSV file containing real user inputs. Use these as inspiration to replicate authentic usage patterns in your synthetic inputs.
+
+Each synthetic input should be a realistic query or request that a user in a fintech startup might make, utilizing one or more of the available tools. The queries should relate to banking software, financial services, or communication within a fintech company.
+
+Guidelines for creating inputs:
+1. Be creative and diverse in your scenarios, imagining various roles and situations within a fintech startup.
+2. Generate queries ranging from simple requests to complex multi-step processes.
+3. Include scenarios that require multiple tool calls to complete a task.
+4. Use natural language and phrasing that a typical fintech employee would use.
+5. Explore different use cases for each tool, considering various parameters and combinations.
+6. Incorporate some edge cases or less common scenarios to add variety.
+7. Ensure each input is unique and adds value to the dataset.
+8. Reference the provided CSV file with real user inputs to inspire authentic usage patterns.
+
+Before generating each input, wrap the following process in <input_generation_process> tags:
+
+1. Brainstorm 3-5 different roles that might exist in a fintech startup (e.g., software developer, financial analyst, project manager).
+2. For each role, list 2-3 potential scenarios or tasks they might encounter.
+3. Consider the complexity of each scenario (simple, moderate, complex).
+4. For each scenario, list which tools from the tool descriptions might be relevant.
+5. Review the CSV file with real user inputs and note any patterns or types of queries that could be incorporated.
+6. Choose one scenario and craft a query based on it, ensuring it meets the guidelines above and reflects authentic usage patterns.
+7. Consider potential edge cases or unusual scenarios related to the chosen query.
+8. Review and refine the generated query to ensure it meets all guidelines and is sufficiently unique.
+9. List the specific tools that would be called to answer the query.
+
+Output Format:
+Present your output as a series of JSONL formatted entries, one per line. Each entry should have the following attributes:
+- unique_id: A unique identifier for each input (starting from 1)
+- Prompt: The synthetic user input or query
+- Answer: Leave this empty
+- Tool Calls: An array of tool names that would be called to answer the prompt
+
+Example format:
+{"unique_id": 1, "Prompt": "Can you list all Slack channels related to our ongoing banking software project?", "Answer": "", "Tool Calls": ["slack_list_channels"]}
+
+Remember to think creatively about the various roles and scenarios that might occur in a fintech startup environment. Consider software developers, financial analysts, project managers, customer support representatives, and other relevant positions. Imagine their day-to-day tasks, challenges, and the types of information or actions they might need to request from an AI assistant.
+
+Generate the specified number of unique inputs, ensuring each one is realistic, diverse, and relevant to the fintech startup context. Use the <input_generation_process> tags to show your thought process for each input before presenting the final JSONL output.

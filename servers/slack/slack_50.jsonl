@@ -1,0 +1,43 @@
+{"unique_id": 1, "Prompt": "List all public channels in our Slack workspace", "Answer": "", "Tool_Calls": ["slack_list_channels"]}
+{"unique_id": 2, "Prompt": "Find all replies to the discussion about vendor onboarding in the procurement channel", "Answer": "", "Tool_Calls": ["slack_get_channel_history", "slack_get_thread_replies"]}
+{"unique_id": 3, "Prompt": "Show me Sarah's user profile information and recent activity", "Answer": "", "Tool_Calls": ["slack_get_user_profile"]}
+{"unique_id": 4, "Prompt": "Get the last 50 messages from the #fraud-fincrime-ops channel", "Answer": "", "Tool_Calls": ["slack_get_channel_history"]}
+{"unique_id": 5, "Prompt": "List all team members and their roles in the workspace", "Answer": "", "Tool_Calls": ["slack_get_users"]}
+{"unique_id": 6, "Prompt": "Check the thread responses to John's announcement about the system maintenance", "Answer": "", "Tool_Calls": ["slack_get_channel_history", "slack_get_thread_replies"]}
+{"unique_id": 7, "Prompt": "Show me all available channels with 'tech' in their name", "Answer": "", "Tool_Calls": ["slack_list_channels"]}
+{"unique_id": 8, "Prompt": "Find Michael's contact information and team role", "Answer": "", "Tool_Calls": ["slack_get_users", "slack_get_user_profile"]}
+{"unique_id": 9, "Prompt": "Get the discussion thread about the latest AML compliance update", "Answer": "", "Tool_Calls": ["slack_get_channel_history", "slack_get_thread_replies"]}
+{"unique_id": 10, "Prompt": "Show me the last 20 messages in the #general channel", "Answer": "", "Tool_Calls": ["slack_get_channel_history"]}
+{"unique_id": 11, "Prompt": "Find all responses to the quarterly update announcement", "Answer": "", "Tool_Calls": ["slack_get_channel_history", "slack_get_thread_replies"]}
+{"unique_id": 12, "Prompt": "List members of the fraud prevention team", "Answer": "", "Tool_Calls": ["slack_get_users"]}
+{"unique_id": 13, "Prompt": "Show me Emma's profile details", "Answer": "", "Tool_Calls": ["slack_get_user_profile"]}
+{"unique_id": 14, "Prompt": "Get all messages from the #project-alpha channel from today", "Answer": "", "Tool_Calls": ["slack_get_channel_history"]}
+{"unique_id": 15, "Prompt": "Find the thread about the new vendor integration timeline", "Answer": "", "Tool_Calls": ["slack_get_channel_history", "slack_get_thread_replies"]}
+{"unique_id": 16, "Prompt": "Show me all product development channels", "Answer": "", "Tool_Calls": ["slack_list_channels"]}
+{"unique_id": 17, "Prompt": "Get David's contact details and current status", "Answer": "", "Tool_Calls": ["slack_get_user_profile"]}
+{"unique_id": 18, "Prompt": "Find all responses to the security protocol update", "Answer": "", "Tool_Calls": ["slack_get_channel_history", "slack_get_thread_replies"]}
+{"unique_id": 19, "Prompt": "List all channels related to customer support", "Answer": "", "Tool_Calls": ["slack_list_channels"]}
+{"unique_id": 20, "Prompt": "Show me the discussion about the latest API changes", "Answer": "", "Tool_Calls": ["slack_get_channel_history", "slack_get_thread_replies"]}
+{"unique_id": 21, "Prompt": "Get profile information for the new compliance officer", "Answer": "", "Tool_Calls": ["slack_get_users", "slack_get_user_profile"]}
+{"unique_id": 22, "Prompt": "Find all messages about the system outage from yesterday", "Answer": "", "Tool_Calls": ["slack_get_channel_history"]}
+{"unique_id": 23, "Prompt": "Show me all channels for the mobile banking team", "Answer": "", "Tool_Calls": ["slack_list_channels"]}
+{"unique_id": 24, "Prompt": "Get the thread about the new authentication requirements", "Answer": "", "Tool_Calls": ["slack_get_channel_history", "slack_get_thread_replies"]}
+{"unique_id": 25, "Prompt": "List all active project channels", "Answer": "", "Tool_Calls": ["slack_list_channels"]}
+{"unique_id": 26, "Prompt": "Find Rachel's team and contact information", "Answer": "", "Tool_Calls": ["slack_get_users", "slack_get_user_profile"]}
+{"unique_id": 27, "Prompt": "Show me all responses to the risk assessment meeting notes", "Answer": "", "Tool_Calls": ["slack_get_channel_history", "slack_get_thread_replies"]}
+{"unique_id": 28, "Prompt": "Get the latest 30 messages from the #incident-response channel", "Answer": "", "Tool_Calls": ["slack_get_channel_history"]}
+{"unique_id": 29, "Prompt": "Find all channels related to regulatory compliance", "Answer": "", "Tool_Calls": ["slack_list_channels"]}
+{"unique_id": 30, "Prompt": "Show me the thread about the new client onboarding process", "Answer": "", "Tool_Calls": ["slack_get_channel_history", "slack_get_thread_replies"]}
+{"unique_id": 31, "Prompt": "List all members of the infrastructure team", "Answer": "", "Tool_Calls": ["slack_get_users"]}
+{"unique_id": 32, "Prompt": "Get Alex's role and department information", "Answer": "", "Tool_Calls": ["slack_get_user_profile"]}
+{"unique_id": 33, "Prompt": "Find all messages about the database migration", "Answer": "", "Tool_Calls": ["slack_get_channel_history"]}
+{"unique_id": 34, "Prompt": "Show me all channels for the risk management team", "Answer": "", "Tool_Calls": ["slack_list_channels"]}
+{"unique_id": 35, "Prompt": "Get the discussion thread about the new compliance training", "Answer": "", "Tool_Calls": ["slack_get_channel_history", "slack_get_thread_replies"]}
+{"unique_id": 36, "Prompt": "List all emergency response channels", "Answer": "", "Tool_Calls": ["slack_list_channels"]}
+{"unique_id": 37, "Prompt": "Find James's current project assignments", "Answer": "", "Tool_Calls": ["slack_get_user_profile"]}
+{"unique_id": 38, "Prompt": "Show me all responses to the penetration testing results", "Answer": "", "Tool_Calls": ["slack_get_channel_history", "slack_get_thread_replies"]}
+{"unique_id": 39, "Prompt": "Get the last week's messages from #security-alerts", "Answer": "", "Tool_Calls": ["slack_get_channel_history"]}
+{"unique_id": 40, "Prompt": "List all channels for the UI/UX team", "Answer": "", "Tool_Calls": ["slack_list_channels"]}
+{"unique_id": 41, "Prompt": "Find the thread about the new payment gateway integration", "Answer": "", "Tool_Calls": ["slack_get_channel_history", "slack_get_thread_replies"]}
+{"unique_id": 42, "Prompt": "Show me Sophie's team affiliations", "Answer": "", "Tool_Calls": ["slack_get_user_profile"]}
+{"unique_id": 43, "Prompt": "Get all messages about the AWS migration", "Answer": "", "Tool_Calls": ["slack_get_channel_history"]}
