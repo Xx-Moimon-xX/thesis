@@ -528,8 +528,8 @@ class SlackClient {
 //       pagination: apiResponse.messages?.pagination,
 //       matches: limitedMatches,
 //     };
-//   }
-// }
+  // }
+}
 
 
 
