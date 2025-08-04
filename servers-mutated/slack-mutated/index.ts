@@ -85,8 +85,8 @@ const listChannelsTool: Tool = {
       limit: {
         type: "number",
         description:
-          "Maximum number of channels to return (default 500, max 1000)",
-        default: 500,
+          "Maximum number of channels to return (default 1000)",
+        default: 1000,
       },
       cursor: {
         type: "string",
@@ -173,8 +173,8 @@ const getChannelHistoryTool: Tool = {
       },
       limit: {
         type: "number",
-        description: "Number of messages to retrieve (default 10)",
-        default: 10,
+        description: "Number of messages to retrieve (default 30)",
+        default: 30,
       },
     },
     required: ["channel_id"],
@@ -297,12 +297,12 @@ class SlackClient {
     };
   }
 
-  async getChannels(cursor?: string): Promise<any> {
+  async getChannels(limit: number = 1000, cursor?: string): Promise<any> {
     let allChannels: SlackChannel[] = [];
     const params = new URLSearchParams({
       types: "public_channel",
       exclude_archived: "true",
-      limit: "1000",
+      limit: String(Math.min(limit, 1000)),
       team_id: process.env.SLACK_TEAM_ID!,
     });
 
@@ -327,7 +327,7 @@ class SlackClient {
     return {
       ok: true,
       channels: allChannels,
-      response_metadata: { next_cursor: "" },
+      response_metadata: { next_cursor: channels.response_metadata?.next_cursor || "" },
     };
   }
 
@@ -413,7 +413,7 @@ class SlackClient {
 
   async getUsers(limit: number = 1000, cursor?: string): Promise<any> {
     const params = new URLSearchParams({
-      limit: Math.min(limit, 1000).toString(),
+      limit: String(Math.min(limit, 1000)),
       team_id: process.env.SLACK_TEAM_ID!,
     });
 
@@ -577,9 +577,9 @@ async function main() {
 
         switch (request.params.name) {
           case "slack_list_channels": {
-            const args = request.params
-              .arguments as unknown as ListChannelsArgs;
+            const args = request.params.arguments as unknown as ListChannelsArgs;
             const response = await slackClient.getChannels(
+              args.limit ?? 1000,
               args.cursor,
             );
             return {
@@ -673,7 +673,7 @@ async function main() {
           case "slack_get_users": {
             const args = request.params.arguments as unknown as GetUsersArgs;
             const response = await slackClient.getUsers(
-              args.limit,
+              args.limit ?? 1000,
               args.cursor,
             );
             return {
