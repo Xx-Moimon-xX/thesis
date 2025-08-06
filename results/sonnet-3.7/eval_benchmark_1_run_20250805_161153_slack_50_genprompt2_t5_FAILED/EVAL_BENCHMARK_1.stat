@@ -1,0 +1,6 @@
+benchmark: EVAL_BENCHMARK_1
+lm: anthropic/claude-3-7-sonnet-20250219
+test_set_size: 50
+dataset_name: slack_50_genprompt2
+eval_lm: anthropic/claude-3-5-sonnet-20241022
+num_threads: 5
