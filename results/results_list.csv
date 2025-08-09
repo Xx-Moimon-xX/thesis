@@ -1,3 +1,7 @@
-Model	Dataset	Dataset Size	Evaluation Benchmark	Tool Set	Eval_LM	Result	Out of	Num_threads	Comments
-anthropic/claude-3-7-sonnet-20250219	slack_50_genprompt2 	50	EVAL_BENCHMARK_1	multiple_servers (181)	anthropic/claude-3-5-sonnet-20241022	33	46	4	Result said 33/50 though.
-anthropic/claude-3-7-sonnet-20250219	slack_50_genprompt2 	50	EVAL_BENCHMARK_1	slack_mutated (5)	anthropic/claude-3-5-sonnet-20241022	25	41	4	
+Model,Dataset,Dataset Size,Evaluation Benchmark,Tool Set,# Tools,Eval_LM,Result,Out of,Percentage,Num_threads,ID,Comments
+anthropic/claude-3-7-sonnet-20250219,slack_50_genprompt2,50,EVAL_BENCHMARK_1,multiple_servers (181),181,anthropic/claude-3-5-sonnet-20241022,33,46,71.73913043,4,,Result said 33/50 though.
+anthropic/claude-3-7-sonnet-20250219,slack_50_genprompt2,50,EVAL_BENCHMARK_1,slack_mutated (5),5,anthropic/claude-3-5-sonnet-20241022,25,41,60.97560976,4,,
+anthropic/claude-sonnet-4-20250514,slack_50_genprompt2,50,EVAL_BENCHMARK_1,slack_mutated (5),5,anthropic/claude-3-5-sonnet-20241022,38,50,76,50,,
+anthropic/claude-sonnet-4-20250514,slack_50_genprompt2,50,EVAL_BENCHMARK_1,multiple_servers (181),181,anthropic/claude-3-5-sonnet-20241022,31,47,65.95744681,15,,Hit credit balance is too low error
+anthropic/claude-3-5-sonnet-20241022,slack_50_genprompt2,50,EVAL_BENCHMARK_1,slack_mutated (5),5,anthropic/claude-3-5-sonnet-20241022,28,50,56,2,20250809_130141,
+anthropic/claude-3-5-sonnet-20241022,slack_50_genprompt2,50,EVAL_BENCHMARK_1,multiple_servers (181),181,anthropic/claude-3-5-sonnet-20241022,31,48,64.58333333,2,20250809_133928,

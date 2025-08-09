@@ -1,0 +1,7 @@
+benchmark: EVAL_BENCHMARK_1
+lm: anthropic/claude-sonnet-4-20250514
+test_set_size: 50
+dataset_name: slack_50_genprompt2
+eval_lm: anthropic/claude-3-5-sonnet-20241022
+num_threads: 50
+toolset : {'mcp_pool': [{'name': 'slack', 'run_config': [{'command': 'node', 'args': ['/Users/cxnpl/cxnpl/thesis/servers-mutated/slack-mutated/dist/index.js'], 'port': 8900}]}]}
